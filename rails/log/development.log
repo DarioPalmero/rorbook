@@ -656,3 +656,10 @@ Processing FacebookController#index (for 192.168.2.58 at 2008-03-22 15:03:26) [G
   Parameters: {"action"=>"index", "controller"=>"facebook"}
 Rendering facebook/index
 Completed in 0.69251 (1 reqs/sec) | Rendering: 0.68534 (98%) | DB: 0.00000 (0%) | 200 OK [http://rorbook.milabs.org/]
+
+
+Processing FacebookController#index (for 192.168.2.58 at 2008-03-22 15:14:08) [GET]
+  Session ID: 9d1760e69a4b524172c26e1f-500092293
+  Parameters: {"fb_sig_time"=>"1206213143.1966", "fb_sig_in_iframe"=>"1", "fb_sig"=>"54aa34cb612fa149ac5f057795a6b4d2", "action"=>"index", "fb_sig_session_key"=>"9d1760e69a4b524172c26e1f-500092293", "controller"=>"facebook", "fb_sig_expires"=>"1206298842", "fb_sig_added"=>"0", "fb_sig_api_key"=>"d7543973dc05d3ace05030ae3acd1a12", "fb_sig_profile_update_time"=>"1206112367", "fb_sig_user"=>"500092293"}
+Rendering facebook/index
+Completed in 0.60741 (1 reqs/sec) | Rendering: 0.60034 (98%) | DB: 0.00000 (0%) | 200 OK [http://rorbook.milabs.org/?fb_sig_in_iframe=1&fb_sig_time=1206213143.1966&fb_sig_added=0&fb_sig_user=500092293&fb_sig_profile_update_time=1206112367&fb_sig_session_key=9d1760e69a4b524172c26e1f-500092293&fb_sig_expires=1206298842&fb_sig_api_key=d7543973dc05d3ace05030ae3acd1a12&fb_sig=54aa34cb612fa149ac5f057795a6b4d2]

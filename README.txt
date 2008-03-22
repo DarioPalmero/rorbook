@@ -9,7 +9,7 @@ This app is configured to run with the Facebook App "RoRBook". You should acess 
 are working on the project.
 
 ***
-Application
+Rails Application
 ***
 
 The rails app is configured to run at http://rorbook.milabs.org:3003 
@@ -25,3 +25,8 @@ Database
 sudo mysqladmin create rorbook_development
 sudo mysqladmin create rorbook_test
 
+***
+Facebook Application
+***
+
+http://apps.facebook.com/rorbook/
