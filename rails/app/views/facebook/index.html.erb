@@ -4,3 +4,14 @@
 
 <b><%= @user.name %></b>
 <%= @user.status.message %>
+
+<br />
+<hr />
+<br />
+
+<span class="title">Fields on the User Object</span>
+<ul>
+        <% for field in Facebooker::User::FIELDS.map(&:to_s).sort %>
+        <li> <%= field %>:  <%= h(@user.send(field)) %></li>      
+        <% end %>
+</ul>

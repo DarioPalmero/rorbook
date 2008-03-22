@@ -5,5 +5,5 @@ class FacebookController < ApplicationController
   def index
     @user = session[:facebook_session].user
   end
-
+   
 end
