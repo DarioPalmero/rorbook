@@ -11,4 +11,7 @@ class FacebookController < ApplicationController
   def create_invitations
   end
    
+  def help
+  end
+   
 end
