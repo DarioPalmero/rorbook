@@ -3271,3 +3271,145 @@ Processing FacebookController#index (for 69.63.176.92 at 2008-03-22 23:12:05) [G
   Parameters: {"fb_sig_time"=>"1206252729.9493", "fb_sig"=>"f3e69bed3d49cc3f444615127b1cd3eb", "_method"=>"GET", "fb_sig_locale"=>"en_US", "action"=>"index", "fb_sig_session_key"=>"d5f05b351d720d6b6c4d1674-678674096", "fb_sig_position_fix"=>"1", "fb_sig_in_canvas"=>"1", "fb_sig_request_method"=>"GET", "controller"=>"facebook", "fb_sig_expires"=>"0", "fb_sig_friends"=>"220392,500092293,504184758,548234324,569397655,591805133,661705029,665491256,710766439,725547270,752550384,898355703", "fb_sig_added"=>"1", "fb_sig_api_key"=>"deef555a0160a4a781f27a45c8d979e5", "fb_sig_profile_update_time"=>"1194364258", "fb_sig_user"=>"678674096"}
 Rendering facebook/index
 Completed in 0.47300 (2 reqs/sec) | Rendering: 0.46500 (98%) | DB: 0.00000 (0%) | 200 OK [http://75.162.182.186/]
+
+
+Processing FacebookController#index (for 69.63.176.92 at 2008-03-22 23:18:27) [GET]
+  Session ID: d5f05b351d720d6b6c4d1674-678674096
+  Parameters: {"fb_sig_time"=>"1206253113.0505", "fb_sig"=>"841cb9dce452af9bb6955dba89eebc30", "_method"=>"GET", "fb_sig_locale"=>"en_US", "action"=>"index", "fb_sig_session_key"=>"d5f05b351d720d6b6c4d1674-678674096", "fb_sig_position_fix"=>"1", "fb_sig_in_canvas"=>"1", "fb_sig_request_method"=>"GET", "controller"=>"facebook", "fb_sig_expires"=>"0", "fb_sig_friends"=>"220392,500092293,504184758,548234324,569397655,591805133,661705029,665491256,710766439,725547270,752550384,898355703", "fb_sig_added"=>"1", "fb_sig_api_key"=>"deef555a0160a4a781f27a45c8d979e5", "fb_sig_profile_update_time"=>"1194364258", "fb_sig_user"=>"678674096"}
+Rendering facebook/index
+
+
+ActionView::TemplateError (end of file reached) on line #3 of facebook/index.erb:
+1: <h1>What are you doing?</h1>
+2: 
+3: <%= image_tag current_user.pic_square, :align => 'left' %>
+4: 
+5: <b><%= current_user.name %></b>
+6: <%= current_user.status.message %>
+
+    D:/programs/ruby/lib/ruby/1.8/net/protocol.rb:133:in `sysread'
+    D:/programs/ruby/lib/ruby/1.8/net/protocol.rb:133:in `rbuf_fill'
+    D:/programs/ruby/lib/ruby/1.8/timeout.rb:56:in `timeout'
+    D:/programs/ruby/lib/ruby/1.8/timeout.rb:76:in `timeout'
+    D:/programs/ruby/lib/ruby/1.8/net/protocol.rb:132:in `rbuf_fill'
+    D:/programs/ruby/lib/ruby/1.8/net/protocol.rb:116:in `readuntil'
+    D:/programs/ruby/lib/ruby/1.8/net/protocol.rb:126:in `readline'
+    D:/programs/ruby/lib/ruby/1.8/net/http.rb:2029:in `read_status_line'
+    D:/programs/ruby/lib/ruby/1.8/net/http.rb:2018:in `read_new'
+    D:/programs/ruby/lib/ruby/1.8/net/http.rb:1059:in `request'
+    D:/programs/ruby/lib/ruby/1.8/net/http.rb:405:in `post_form'
+    D:/programs/ruby/lib/ruby/1.8/net/http.rb:547:in `start'
+    D:/programs/ruby/lib/ruby/1.8/net/http.rb:404:in `post_form'
+    vendor/plugins/facebooker/lib/facebooker/service.rb:13:in `post'
+    vendor/plugins/facebooker/lib/facebooker/session.rb:399:in `post'
+    vendor/plugins/facebooker/lib/facebooker/models/user.rb:71:in `populate'
+    vendor/plugins/facebooker/lib/facebooker/model.rb:35:in `pic_square'
+    app/views/facebook/index.erb:3:in `_run_erb_47app47views47facebook47index46erb'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:270:in `render_without_benchmark'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    D:/programs/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    D:/programs/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:76:in `process'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:74:in `synchronize'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/rails.rb:74:in `process'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:282:in `run'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `each'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `run'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:128:in `run'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/command.rb:212:in `run'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:281
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    D:/programs/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    D:/programs/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    D:/programs/ruby/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    D:/programs/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    D:/programs/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering D:/programs/ruby/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FacebookController#index (for 69.63.176.90 at 2008-03-22 23:19:22) [GET]
+  Session ID: d5f05b351d720d6b6c4d1674-678674096
+  Parameters: {"fb_sig_time"=>"1206253165.7211", "fb_sig"=>"ec81a3ceaf594221caa72f8e20134864", "_method"=>"GET", "fb_sig_locale"=>"en_US", "action"=>"index", "fb_sig_session_key"=>"d5f05b351d720d6b6c4d1674-678674096", "fb_sig_position_fix"=>"1", "fb_sig_in_canvas"=>"1", "fb_sig_request_method"=>"GET", "controller"=>"facebook", "fb_sig_expires"=>"0", "fb_sig_friends"=>"220392,500092293,504184758,548234324,569397655,591805133,661705029,665491256,710766439,725547270,752550384,898355703", "fb_sig_added"=>"1", "fb_sig_api_key"=>"deef555a0160a4a781f27a45c8d979e5", "fb_sig_profile_update_time"=>"1194364258", "fb_sig_user"=>"678674096"}
+Rendering facebook/index
+Completed in 0.47700 (2 reqs/sec) | Rendering: 0.47200 (98%) | DB: 0.00000 (0%) | 200 OK [http://75.162.182.186/]
+
+
+Processing FacebookController#index (for 69.63.176.92 at 2008-03-22 23:21:17) [GET]
+  Session ID: d5f05b351d720d6b6c4d1674-678674096
+  Parameters: {"fb_sig_time"=>"1206253282.2091", "fb_sig"=>"9f355df48991164e77803737d857d1d7", "_method"=>"GET", "fb_sig_locale"=>"en_US", "action"=>"index", "fb_sig_session_key"=>"d5f05b351d720d6b6c4d1674-678674096", "fb_sig_position_fix"=>"1", "fb_sig_in_canvas"=>"1", "fb_sig_request_method"=>"GET", "controller"=>"facebook", "fb_sig_expires"=>"0", "fb_sig_friends"=>"220392,500092293,504184758,548234324,569397655,591805133,661705029,665491256,710766439,725547270,752550384,898355703", "fb_sig_added"=>"1", "fb_sig_api_key"=>"deef555a0160a4a781f27a45c8d979e5", "fb_sig_profile_update_time"=>"1194364258", "fb_sig_user"=>"678674096"}
+Rendering facebook/index
+Completed in 0.44700 (2 reqs/sec) | Rendering: 0.44200 (98%) | DB: 0.00000 (0%) | 200 OK [http://75.162.182.186/]
+
+
+Processing FacebookController#index (for 69.63.176.91 at 2008-03-22 23:21:34) [GET]
+  Session ID: d5f05b351d720d6b6c4d1674-678674096
+  Parameters: {"fb_sig_time"=>"1206253298.3237", "fb_sig"=>"65480db67c868fc59179506e0ac74de1", "_method"=>"GET", "fb_sig_locale"=>"en_US", "action"=>"index", "fb_sig_session_key"=>"d5f05b351d720d6b6c4d1674-678674096", "fb_sig_position_fix"=>"1", "fb_sig_in_canvas"=>"1", "fb_sig_request_method"=>"GET", "controller"=>"facebook", "fb_sig_expires"=>"0", "fb_sig_friends"=>"220392,500092293,504184758,548234324,569397655,591805133,661705029,665491256,710766439,725547270,752550384,898355703", "fb_sig_added"=>"1", "fb_sig_api_key"=>"deef555a0160a4a781f27a45c8d979e5", "fb_sig_profile_update_time"=>"1194364258", "fb_sig_user"=>"678674096"}
+Rendering facebook/index
+Completed in 0.44600 (2 reqs/sec) | Rendering: 0.44000 (98%) | DB: 0.00000 (0%) | 200 OK [http://75.162.182.186/]
+
+
+Processing FacebookController#index (for 69.63.176.232 at 2008-03-22 23:22:00) [GET]
+  Session ID: 93c14e961eb1a0a4fbbc0278-500092293
+  Parameters: {"fb_sig_time"=>"1206253325.0108", "fb_sig"=>"711fc4d5a8e545d8397df927e84e92a9", "_method"=>"GET", "fb_sig_locale"=>"en_US", "action"=>"index", "fb_sig_session_key"=>"93c14e961eb1a0a4fbbc0278-500092293", "fb_sig_position_fix"=>"1", "fb_sig_in_canvas"=>"1", "fb_sig_request_method"=>"GET", "controller"=>"facebook", "fb_sig_expires"=>"0", "fb_sig_friends"=>"110305,220392,220873,703671,928179,1803383,2100306,2714254,5412016,6107559,7407626,7961163,10501051,10514017,11308558,15201788,15604642,24203570,42403178,43100226,52201770,183600210,290900013,500065899,500092142,500280652,500283591,500772359,500924395,500961060,500967395,501096375,502303355,502411873,502558475,502921944,503133000,503291522,503866638,504184758,504598293,505305603,505625667,506611157,506618997,506654603,507448344,508035221,508050968,511618270,511888725,514176559,514752852,516523135,524902515,530890436,533317385,540450732,540737805,548234324,548362954,549962428,550980302,560045083,560709439,564745778,565851643,569132489,569397655,572267706,576700552,586497352,591805133,600842539,603769327,609352260,610932162,611181621,611234285,621186601,626791286,630377179,635486281,654362585,656140627,658563267,658875745,661705029,664415424,665491256,674477068,678674096,680405187,680581396,683183967,687986699,688608655,690261886,692169717,695537463,701060086,708311130,708727040,710766439,716990625,721439224,733057624,736982669,747166563,752550384,772720009,776268873,802498943,815308781,851145312,1003795292,1014570013,1033725520,1053620144,1066719358,1113412918,1147390204,1182005355,1336680059,1338630443", "fb_sig_added"=>"1", "fb_sig_api_key"=>"deef555a0160a4a781f27a45c8d979e5", "fb_sig_profile_update_time"=>"1206112367", "fb_sig_user"=>"500092293"}
+Rendering facebook/index
+Completed in 0.49100 (2 reqs/sec) | Rendering: 0.47100 (95%) | DB: 0.00000 (0%) | 200 OK [http://75.162.182.186/]
+
+
+Processing FacebookController#help (for 69.63.176.231 at 2008-03-22 23:22:07) [GET]
+  Session ID: 93c14e961eb1a0a4fbbc0278-500092293
+  Parameters: {"fb_sig_time"=>"1206253332.1039", "fb_sig"=>"e84baaef5bf415cc4b5bb7adc0e1a8b5", "_method"=>"GET", "fb_sig_locale"=>"en_US", "action"=>"help", "fb_sig_session_key"=>"93c14e961eb1a0a4fbbc0278-500092293", "fb_sig_position_fix"=>"1", "fb_sig_in_canvas"=>"1", "fb_sig_request_method"=>"GET", "controller"=>"facebook", "fb_sig_expires"=>"0", "fb_sig_friends"=>"110305,220392,220873,703671,928179,1803383,2100306,2714254,5412016,6107559,7407626,7961163,10501051,10514017,11308558,15201788,15604642,24203570,42403178,43100226,52201770,183600210,290900013,500065899,500092142,500280652,500283591,500772359,500924395,500961060,500967395,501096375,502303355,502411873,502558475,502921944,503133000,503291522,503866638,504184758,504598293,505305603,505625667,506611157,506618997,506654603,507448344,508035221,508050968,511618270,511888725,514176559,514752852,516523135,524902515,530890436,533317385,540450732,540737805,548234324,548362954,549962428,550980302,560045083,560709439,564745778,565851643,569132489,569397655,572267706,576700552,586497352,591805133,600842539,603769327,609352260,610932162,611181621,611234285,621186601,626791286,630377179,635486281,654362585,656140627,658563267,658875745,661705029,664415424,665491256,674477068,678674096,680405187,680581396,683183967,687986699,688608655,690261886,692169717,695537463,701060086,708311130,708727040,710766439,716990625,721439224,733057624,736982669,747166563,752550384,772720009,776268873,802498943,815308781,851145312,1003795292,1014570013,1033725520,1053620144,1066719358,1113412918,1147390204,1182005355,1336680059,1338630443", "fb_sig_added"=>"1", "fb_sig_api_key"=>"deef555a0160a4a781f27a45c8d979e5", "fb_sig_profile_update_time"=>"1206112367", "fb_sig_user"=>"500092293"}
+Rendering facebook/help
+Completed in 0.01300 (76 reqs/sec) | Rendering: 0.00500 (38%) | DB: 0.00000 (0%) | 200 OK [http://75.162.182.186/facebook/help]
+
+
+Processing FacebookController#index (for 69.63.176.230 at 2008-03-22 23:22:11) [GET]
+  Session ID: 93c14e961eb1a0a4fbbc0278-500092293
+  Parameters: {"fb_sig_time"=>"1206253335.6827", "fb_sig"=>"26221d2a0bd2fe88d2ffd09033fea405", "_method"=>"GET", "fb_sig_locale"=>"en_US", "action"=>"index", "fb_sig_session_key"=>"93c14e961eb1a0a4fbbc0278-500092293", "fb_sig_position_fix"=>"1", "fb_sig_in_canvas"=>"1", "fb_sig_request_method"=>"GET", "controller"=>"facebook", "fb_sig_expires"=>"0", "fb_sig_friends"=>"110305,220392,220873,703671,928179,1803383,2100306,2714254,5412016,6107559,7407626,7961163,10501051,10514017,11308558,15201788,15604642,24203570,42403178,43100226,52201770,183600210,290900013,500065899,500092142,500280652,500283591,500772359,500924395,500961060,500967395,501096375,502303355,502411873,502558475,502921944,503133000,503291522,503866638,504184758,504598293,505305603,505625667,506611157,506618997,506654603,507448344,508035221,508050968,511618270,511888725,514176559,514752852,516523135,524902515,530890436,533317385,540450732,540737805,548234324,548362954,549962428,550980302,560045083,560709439,564745778,565851643,569132489,569397655,572267706,576700552,586497352,591805133,600842539,603769327,609352260,610932162,611181621,611234285,621186601,626791286,630377179,635486281,654362585,656140627,658563267,658875745,661705029,664415424,665491256,674477068,678674096,680405187,680581396,683183967,687986699,688608655,690261886,692169717,695537463,701060086,708311130,708727040,710766439,716990625,721439224,733057624,736982669,747166563,752550384,772720009,776268873,802498943,815308781,851145312,1003795292,1014570013,1033725520,1053620144,1066719358,1113412918,1147390204,1182005355,1336680059,1338630443", "fb_sig_added"=>"1", "fb_sig_api_key"=>"deef555a0160a4a781f27a45c8d979e5", "fb_sig_profile_update_time"=>"1206112367", "fb_sig_user"=>"500092293"}
+Rendering facebook/index
+Completed in 0.54100 (1 reqs/sec) | Rendering: 0.52800 (97%) | DB: 0.00000 (0%) | 200 OK [http://75.162.182.186/]
