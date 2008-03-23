@@ -1,0 +1,20 @@
+<h1>What are you doing?</h1>
+
+<%= image_tag current_user.pic_square, :align => 'left' %>
+
+<b><%= current_user.name %></b>
+<%= current_user.status.message %>
+
+<br />
+<hr />
+<br />
+
+<%= link_to("Click Friends. ", :action => 'invite_friends', :only_path => false) %>
+<br/><br/><br/>
+
+<span class="title">Fields on the User Object</span>
+<ul>
+        <% for field in Facebooker::User::FIELDS.map(&:to_s).sort %>
+        <li> <%= field %>:  <%= h(current_user.send(field)) %></li>      
+        <% end %>
+</ul>

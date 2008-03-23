@@ -1,0 +1,7 @@
+<% content_for("invite_user") do %>
+	I'm a little teapot short and stout... why the hell am I doing this drunk? <%= fb_req_choice("Check it out!", root_url) %>
+<% end %> 
+
+<% fb_request_form("Facebooker Application","invite_user", url_for(:action => 'create_invitations', :canvas => true, :only_path => false)) do %>
+	<%= fb_multi_friend_selector("Check me out man.", {:showborder => true, :exclude_ids => current_user.friends_with_this_app})   %>
+<% end %>

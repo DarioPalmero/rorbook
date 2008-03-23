@@ -7,4 +7,14 @@ class ApplicationController < ActionController::Base
   # See ActionController::RequestForgeryProtection for details
   # Uncomment the :secret if you're not using the cookie session store
   protect_from_forgery # :secret => '778343f7953492021ddbb8cda10a34be'
+  
+  def current_user
+  	if session[:facebook_session]
+  		session[:facebook_session].user
+  	else
+  		false
+  	end
+  end
+  helper_method :current_user
+  
 end
