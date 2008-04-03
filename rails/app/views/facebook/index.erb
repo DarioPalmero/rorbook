@@ -1,22 +1,28 @@
-<h1>What are you doing?</h1>
+<%= render :partial => 'shared' %>
 
-<%= image_tag current_user.pic_square, :align => 'left' %>
+<%= render :partial => 'header' %>
+	<div class="fbror_sidebarnav">
+	</div>
+	<div class="fbror_content">
+		
+		<fb:iframe frameborder="0" width="100%" height="500px" src="http://www.kiobo.com/" />
 
-<b><%= current_user.name %></b>
-<%= current_user.status.message %>
+		<div class="fbror_friends_with_this_app fbror_section">
+		<h3>Your Friends Using THis App</h3>
+		<% for a_friend in @userF.friends_with_this_app %>
+			<div class="fbror_friend_with_this_app">
+		  		<div class="fbror_friend_pic_with_this_app">
+		  			<%= fb_profile_pic a_friend %>
+				</div>
+				<div class="fbror_friend_name_with_this_app">
+					<%= fb_name a_friend %>
+				</div>
+			<div>
+		<% end %>
+		</div>
 
-<br />
-<hr />
-<br />
-<fb:iframe frameborder="0" src="http://www.google.com/" />
 
-<%= link_to("Invite Friends. ", :action => 'invite_friends', :only_path => false) %>
-<%= link_to("Help. ", :action => 'help', :only_path => false) %>
-<br/><br/><br/>
+	</div>
+	<div class="fbror_footer"></div>
+</div>
 
-<span class="title">Fields on the User Object</span>
-<ul>
-        <% for field in Facebooker::User::FIELDS.map(&:to_s).sort %>
-        <li> <%= field %>:  <%= h(current_user.send(field)) %></li>      
-        <% end %>
-</ul>

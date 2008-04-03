@@ -1,0 +1,65 @@
+.fbror_navigation {
+	border-bottom: 1px solid #D8DFEA;
+	color: #666666;
+	line-height: 40px;
+	margin: 0pt;
+	overflow: hidden;
+	padding: 0pt 20px;
+}
+
+ul.fbror_topnav {
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+}
+
+ul.fbror_topnav li {
+	display: inline;
+	margin: 0;
+}
+
+ul.fbror_topnav li a {
+	font-size: 1em;
+	margin: 0;
+}
+.fbror_logo {
+	background: #F7F7F7 none repeat scroll 0% 0%;
+	margin: 0pt 0pt 10px;
+	padding: 0pt;
+	border-bottom: 1px solid #D8DFEA;
+}
+.fbror_logo h2 {
+	font-size: 1.3em;;
+	margin: 0pt 20px 20px;
+	padding: 20px 0pt 8px 20px;
+	position: relative;
+	background: transparent url(http://96.244.4.220:3004/images/logo16.png) no-repeat scroll 0px 22px;
+}
+.fbror_content {
+	padding: 15px;
+}
+.fbror_content h3{
+	font-size: 1.2em;
+}
+.fbror_step {
+	background: #F7F7F7 none repeat scroll 0% 0%;
+	border: 1px solid #D8DFEA;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+.fbror_friends_with_this_app {
+	margin-top: 30px;
+}
+.fbror_section h3 {
+	background:#D8DFEA none repeat scroll 0% 0%;
+	border-top:1px solid #3B5998;
+	color:#3B5998;
+	font-size:11px;
+	line-height:18px;
+	margin:0pt 0pt 10px;
+	padding:0pt 8px;
+}
+.fbror_friend_with_this_app {
+	width: 100px;
+	text-align: center;
+}
