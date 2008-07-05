@@ -3857,3 +3857,47 @@ Rendering facebook/thanks
 Rendered facebook/_shared (0.00600)
 Rendered facebook/_header (0.01400)
 Completed in 0.68500 (1 reqs/sec) | Rendering: 0.02900 (4%) | DB: 0.02200 (3%) | 200 OK [http://75.162.176.10/facebook/thanks]
+
+
+Processing FacebookController#thanks (for 204.15.23.168 at 2008-07-05 15:25:43) [GET]
+  Session ID: d5f05b351d720d6b6c4d1674-678674096
+  Parameters: {"fb_sig_time"=>"1215296737.3141", "fb_sig"=>"add7a737ab5245eca1ef55c195138c87", "_method"=>"GET", "fb_sig_locale"=>"en_US", "action"=>"thanks", "fb_sig_session_key"=>"d5f05b351d720d6b6c4d1674-678674096", "fb_sig_position_fix"=>"1", "fb_sig_in_canvas"=>"1", "fb_sig_request_method"=>"GET", "controller"=>"facebook", "fb_sig_expires"=>"0", "fb_sig_friends"=>"220392,500092293,504184758,548234324,569132489,569397655,591805133,661705029,664274083,665491256,710766439,725547270,747118725,752550384,898355703,1223140480", "fb_sig_added"=>"1", "fb_sig_api_key"=>"deef555a0160a4a781f27a45c8d979e5", "fb_sig_profile_update_time"=>"1211470106", "fb_sig_user"=>"678674096"}
+  [4;36;1mUser Columns (0.006000)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.009000)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.000000)[0m   [0;1mINSERT INTO `users` (`name`, `updated_at`, `facebook_id`, `created_at`) VALUES('Dan Ahern', '2008-07-05 15:25:44', 678674096, '2008-07-05 15:25:44')[0m
+  [4;35;1mSQL (0.036000)[0m   [0mCOMMIT[0m
+Rendering facebook/thanks
+Completed in 0.91500 (1 reqs/sec) | Rendering: 0.00600 (0%) | DB: 0.05100 (5%) | 200 OK [http://75.162.176.10/facebook/thanks]
+
+
+Processing FacebookController#thanks (for 204.15.23.169 at 2008-07-05 15:26:39) [GET]
+  Session ID: d5f05b351d720d6b6c4d1674-678674096
+  Parameters: {"fb_sig_time"=>"1215296793.2296", "fb_sig"=>"636b04c1b5afb963b20c0fb5c24d025a", "_method"=>"GET", "fb_sig_locale"=>"en_US", "action"=>"thanks", "fb_sig_session_key"=>"d5f05b351d720d6b6c4d1674-678674096", "fb_sig_position_fix"=>"1", "fb_sig_in_canvas"=>"1", "fb_sig_request_method"=>"GET", "controller"=>"facebook", "fb_sig_expires"=>"0", "fb_sig_friends"=>"220392,500092293,504184758,548234324,569132489,569397655,591805133,661705029,664274083,665491256,710766439,725547270,747118725,752550384,898355703,1223140480", "fb_sig_added"=>"1", "fb_sig_api_key"=>"deef555a0160a4a781f27a45c8d979e5", "fb_sig_profile_update_time"=>"1211470106", "fb_sig_user"=>"678674096"}
+  [4;36;1mUser Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.009000)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.001000)[0m   [0;1mINSERT INTO `users` (`name`, `updated_at`, `facebook_id`, `created_at`) VALUES('Dan Ahern', '2008-07-05 15:26:40', 678674096, '2008-07-05 15:26:40')[0m
+  [4;35;1mSQL (0.002000)[0m   [0mCOMMIT[0m
+Rendering facebook/thanks
+Completed in 0.62400 (1 reqs/sec) | Rendering: 0.00500 (0%) | DB: 0.01700 (2%) | 200 OK [http://75.162.176.10/facebook/thanks]
+
+
+Processing FacebookController#thanks (for 204.15.23.168 at 2008-07-05 15:27:08) [GET]
+  Session ID: d5f05b351d720d6b6c4d1674-678674096
+  Parameters: {"fb_sig_time"=>"1215296821.7976", "fb_sig"=>"889cbab4e10f2a6a9a3ab91a72edd4ed", "_method"=>"GET", "fb_sig_locale"=>"en_US", "action"=>"thanks", "fb_sig_session_key"=>"d5f05b351d720d6b6c4d1674-678674096", "fb_sig_position_fix"=>"1", "fb_sig_in_canvas"=>"1", "fb_sig_request_method"=>"GET", "controller"=>"facebook", "fb_sig_expires"=>"0", "fb_sig_friends"=>"220392,500092293,504184758,548234324,569132489,569397655,591805133,661705029,664274083,665491256,710766439,725547270,747118725,752550384,898355703,1223140480", "fb_sig_added"=>"1", "fb_sig_api_key"=>"deef555a0160a4a781f27a45c8d979e5", "fb_sig_profile_update_time"=>"1211470106", "fb_sig_user"=>"678674096"}
+  [4;36;1mUser Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.013000)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (users.facebook_id = 678674096) LIMIT 1[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCOMMIT[0m
+Rendering facebook/thanks
+Completed in 0.66000 (1 reqs/sec) | Rendering: 0.00500 (0%) | DB: 0.01800 (2%) | 200 OK [http://75.162.176.10/facebook/thanks]
+
+
+Processing FacebookController#thanks (for 204.15.23.171 at 2008-07-05 15:27:35) [GET]
+  Session ID: d5f05b351d720d6b6c4d1674-678674096
+  Parameters: {"fb_sig_time"=>"1215296849.3368", "fb_sig"=>"6ff3083af6bfe41d00705a2e6e302c77", "_method"=>"GET", "fb_sig_locale"=>"en_US", "action"=>"thanks", "fb_sig_session_key"=>"d5f05b351d720d6b6c4d1674-678674096", "fb_sig_position_fix"=>"1", "fb_sig_in_canvas"=>"1", "fb_sig_request_method"=>"GET", "controller"=>"facebook", "fb_sig_expires"=>"0", "fb_sig_friends"=>"220392,500092293,504184758,548234324,569132489,569397655,591805133,661705029,664274083,665491256,710766439,725547270,747118725,752550384,898355703,1223140480", "fb_sig_added"=>"1", "fb_sig_api_key"=>"deef555a0160a4a781f27a45c8d979e5", "fb_sig_profile_update_time"=>"1211470106", "fb_sig_user"=>"678674096"}
+  [4;36;1mUser Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.010000)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.001000)[0m   [0;1mSELECT * FROM `users` WHERE (users.facebook_id = 678674096) LIMIT 1[0m
+  [4;35;1mSQL (0.001000)[0m   [0mCOMMIT[0m
+Rendering facebook/thanks
+Completed in 0.47100 (2 reqs/sec) | Rendering: 0.00500 (1%) | DB: 0.01700 (3%) | 200 OK [http://75.162.176.10/facebook/thanks]
