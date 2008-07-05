@@ -2,7 +2,7 @@ require 'yaml'
 require 'facebooker'
 namespace :app do
   
-  namespace :server_cache do
+  namespace :utilities do
   	
   	def generate_session
   		api_key = YAML.load(File.read(File.join(RAILS_ROOT, "config", "facebooker.yml")))[RAILS_ENV]["api_key"]
