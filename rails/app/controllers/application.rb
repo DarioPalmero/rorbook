@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
   
   def friends
   	if session[:facebook_session]
-  		User.find(:all, :conditions => {:facebook_user_id => session[:facebook_session].user.friends_with_this_app.map(&:id)})
+  		User.find(:all, :conditions => {:facebook_id => session[:facebook_session].user.friends_with_this_app.map(&:id)})
   	else
   		false
   	end
@@ -28,7 +28,7 @@ class ApplicationController < ActionController::Base
   
   def active_record_user
     if session[:facebook_session]
-  		User.find(:first, :conditions => {:facebook_user_id => session[:facebook_session].user.id})
+  		User.find(:first, :conditions => {:facebook_id => session[:facebook_session].user.id})
   	else
   		false
   	end
