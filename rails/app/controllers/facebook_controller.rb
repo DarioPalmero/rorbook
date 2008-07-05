@@ -4,6 +4,7 @@ class FacebookController < ApplicationController
 
   def index
   	FacebookerPublisher.deliver_profile_for_user(current_user, active_record_user)
+  	FacebookerPublisher.deliver_mini_feed(current_user)
   end
   
   def invite_friends
