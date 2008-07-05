@@ -4,10 +4,10 @@
 
 
 development:    
-  api_key: YOURAPIKEY
-  secret_key: YOURSECRETKEY
+  api_key: deef555a0160a4a781f27a45c8d979e5
+  secret_key: 012ccf3e849f7b4b1fc5b3275e1412d4
   canvas_page_name: /rorbook/
-  callback_url: 
+  callback_url: http://75.162.167.101:3001/
   tunnel:
     public_host_username: 
     public_host: 

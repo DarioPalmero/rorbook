@@ -1,28 +1,17 @@
-<%= render :partial => 'shared' %>
-
-<%= render :partial => 'header' %>
-	<div class="fbror_sidebarnav">
-	</div>
-	<div class="fbror_content">
-		
-		<fb:iframe frameborder="0" width="100%" height="500px" src="http://www.kiobo.com/" />
-
-		<div class="fbror_friends_with_this_app fbror_section">
-		<h3>Your Friends Using THis App</h3>
-		<% for a_friend in @userF.friends_with_this_app %>
+<div class="fbror_sidebarnav">
+</div>
+<div class="fbror_content">
+	<div class="fbror_friends_with_this_app fbror_section">
+		<h3>Your Friends Using This App</h3>
+		<% current_user.friends_with_this_app.each do |friend| %>
 			<div class="fbror_friend_with_this_app">
-		  		<div class="fbror_friend_pic_with_this_app">
-		  			<%= fb_profile_pic a_friend %>
+	  		<div class="fbror_friend_pic_with_this_app">
+	  			<%= fb_profile_pic friend %>
 				</div>
 				<div class="fbror_friend_name_with_this_app">
-					<%= fb_name a_friend %>
+					<%= fb_name friend %>
 				</div>
-			<div>
+			</div>
 		<% end %>
-		</div>
-
-
 	</div>
-	<div class="fbror_footer"></div>
 </div>
-
