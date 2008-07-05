@@ -4072,3 +4072,20 @@ Rendered facebook/_minifeed (0.00300)
 Sending mini feed story for user Dan Ahern
 Rendering facebook/index
 Completed in 2.11800 (0 reqs/sec) | Rendering: 0.56900 (26%) | DB: 0.01200 (0%) | 200 OK [http://75.162.176.10/]
+
+
+Processing FacebookController#index (for 69.63.176.90 at 2008-07-05 15:45:53) [GET]
+  Session ID: d5f05b351d720d6b6c4d1674-678674096
+  Parameters: {"fb_sig_time"=>"1215297947.3812", "fb_sig"=>"1edd6b375e826374fd8ca50a5ed97115", "_method"=>"GET", "fb_sig_locale"=>"en_US", "action"=>"index", "fb_sig_session_key"=>"d5f05b351d720d6b6c4d1674-678674096", "fb_sig_position_fix"=>"1", "fb_sig_in_canvas"=>"1", "fb_sig_request_method"=>"GET", "controller"=>"facebook", "fb_sig_expires"=>"0", "fb_sig_friends"=>"220392,500092293,504184758,548234324,569132489,569397655,591805133,661705029,664274083,665491256,710766439,725547270,747118725,752550384,898355703,1223140480", "fb_sig_added"=>"1", "fb_sig_api_key"=>"deef555a0160a4a781f27a45c8d979e5", "fb_sig_profile_update_time"=>"1211470106", "fb_sig_user"=>"678674096"}
+  [4;35;1mUser Load (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`facebook_id` = 678674096) LIMIT 1[0m
+  [4;36;1mUser Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendered /facebook/_user_profile (0.00200)
+Rendered facebook/_profile_action (0.00200)
+Rendered facebook/_minifeed (0.00500)
+Sending mini feed story for user Dan Ahern
+Rendering template within layouts/application
+Rendering facebook/index
+Rendered layouts/_shared (0.00600)
+Rendered layouts/_header (0.01200)
+Rendered layouts/_footer (0.00600)
+Completed in 2.11400 (0 reqs/sec) | Rendering: 0.47100 (22%) | DB: 0.00500 (0%) | 200 OK [http://75.162.176.10/]
