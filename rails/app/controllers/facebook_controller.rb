@@ -1,4 +1,3 @@
-require 'facebook_publisher'
 class FacebookController < ApplicationController
   ensure_application_is_installed_by_facebook_user
 

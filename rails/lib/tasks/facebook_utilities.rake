@@ -1,5 +1,4 @@
 require 'yaml'
-require 'facebooker'
 namespace :app do
   
   namespace :utilities do
